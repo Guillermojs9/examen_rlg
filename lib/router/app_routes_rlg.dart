@@ -17,9 +17,9 @@ class AppRoutes {
         name: 'Monitores Screen',
         screen: const MonitoresScreen()),
     MenuOption(
-        route: 'alert',
+        route: 'Reservas',
         icon: Icons.ring_volume,
-        name: 'Alert Screen',
+        name: 'Reservas',
         screen: const AlertScreen()),
   ];
 

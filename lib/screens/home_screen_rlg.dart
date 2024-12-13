@@ -21,10 +21,16 @@ class HomeScreen extends StatelessWidget {
                         builder: (context) => const SigninScreen()),
                   );
                 },
-                child: const Text("Sign in")),
+                child: const SizedBox(
+                    width: double.infinity,
+                    child: Center(child: Text("Sign up")))),
           ),
           const SizedBox(height: 20),
-          ElevatedButton(onPressed: () {}, child: const Text("Sign up"))
+          ElevatedButton(
+              onPressed: () {},
+              child: const SizedBox(
+                  width: double.infinity,
+                  child: Center(child: Text("Sign up"))))
         ],
       ),
     );
