@@ -9,6 +9,7 @@ class SigninScreen extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: const Text("Signin Screen"),
+          automaticallyImplyLeading: false,
         ),
         body: SingleChildScrollView(
           child: Column(
@@ -71,7 +72,12 @@ class SigninScreen extends StatelessWidget {
                         },
                         child: const SizedBox(
                             width: double.infinity,
-                            child: Center(child: Text("Sign in"))))
+                            child: Center(child: Text("Sign in")))),
+                    const SizedBox(height: 70),
+                    FloatingActionButton(
+                      child: const Icon(Icons.close),
+                      onPressed: () => Navigator.pop(context),
+                    ),
                   ],
                 ),
               )
