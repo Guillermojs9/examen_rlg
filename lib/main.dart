@@ -1,5 +1,6 @@
 import 'package:examen_rlg/router/app_routes_rlg.dart';
 import 'package:examen_rlg/screens/home_screen_rlg.dart';
+import 'package:examen_rlg/theme/app_theme_rlg.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,6 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Material App',
       home: const HomeScreen(),
+      theme: AppTheme.lightTheme,
       routes: AppRoutes.getAppRoutes(),
     );
   }
